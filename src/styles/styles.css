@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Rethink+Sans:wght@400;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Rethink: 'Rethink Sans', sans-serif;
+
+    --cor1: #FBF6F5;
+    --cor2: #F6ECEA;
+    --cor3: #F0DCD8;
+    --cor4: #E4C3BD;
+    --cor5: #D3A096;
+    --cor6: #BA7264;
+    --cor7: #AA6558;
+    --cor8: #8E5347;
+    --cor9: #77463D;
+    --cor10: #643F38;
+    --cor11: #351E1A;
+}
+
+form {
+    /*está centralizando o formulário*/
+    margin: 100px auto;
+    width: 350px;
+    padding: 2em;
+    border: 1px solid var(--cor11);
+    background-color: var(--cor10);
+    border-radius: 5px;
+}
+
+form div + div {
+    margin-top: 1em;
+}
+
+label {
+    display: flex;
+    padding: 10px 20px 10px 0px;
+    text-align: right;
+    color: var(--cor1);
+    font-family: var(--Rethink);
+}
+
+input, 
+textarea {
+    font-size: 1em;
+
+    /* Para dar o mesmo tamanho a todos os campo de texto */
+    width: 285px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    border: 1px solid #999;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+input:focus, 
+textarea:focus {
+    border-color: #000;
+}
+
+textarea {
+    /* Para alinhar corretamente os campos de texto de várias linhas com sua label*/
+    vertical-align: top;
+
+    /*Aqui é para dar espaço suficiente para digitar algum texto*/
+    height: 5em;
+
+    /* esse é para permitir que os usuários redimensionarem qualquer textarea verticalmente, não funciona em todos os browsers */
+    resize: vertical;
+}
+
+/* .button {
+    padding-left: 5px;
+} */
+
+button {
+    font-family: var(--Rethink);
+    padding: 5px;
+    border: none;
+    background-color: var(--cor11);
+    color: var(--cor1);
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: var(--cor7);
+    color: var(--cor11);
+    font-weight: 600;
+}
